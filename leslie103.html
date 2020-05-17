@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    const diasFeriados = new Set([
+      "31/12/2020","25/12/2020", "6/1/2020","26/1/2020","27/2/2020"]);
+
+    const dia = parseInt(prompt("Ingrese el dia(numero):", ""));
+    const mes = parseInt(prompt("Ingrese  el mes:", ""));
+    const año = parseInt(prompt("Ingrese el año(actual):", ""));
+    if (diasFeriados.has(`${dia}/${mes}/${año}`))
+      document.write("Dia feridado");
+    else
+      document.write("Dia Normal");
+  </script>
+</body>
+
+</html>
